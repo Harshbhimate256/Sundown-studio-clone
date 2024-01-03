@@ -2,6 +2,16 @@
     font-family: nue;
     src: url(./NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: nue;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: nue;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -160,6 +170,7 @@ nav{
     width: 100%;
     padding: 8vw 0;
     background-color: #EFEAE3;
+    position: relative;
 }
 #moving-text{
     white-space: nowrap;
@@ -196,4 +207,91 @@ nav{
     to{
         transform: translate(-100%);
     }
+}
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    /* background-color: rgb(246, 246, 103) ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5vw;
+    position: relative;
+    z-index: 9;
+}
+#page2-bottom h1{
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 57%;
+    letter-spacing: -1px;
+}
+#bottom-part2{ 
+    width: 20%;
+}
+#bottom-part2 img{
+    margin-top: 20rem;
+    width: 98%;
+    border-radius: 10px;
+}
+#bottom-part2 p{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 3vw;
+}
+#page2 #gola2{
+    height: 26vw;
+    width: 26vw;
+    position: absolute;
+    /* background: linear-gradient(to top right,#FE330A,#FE6E21); */
+    background-color: #FE330A;
+    border-radius: 50%;
+    top:65%;
+    left: 20%;
+    z-index: 8;
+    filter: blur(20px);
+    animation-name: gola2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#page2 #gola3{
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    /* background: linear-gradient(to top right,#FE330A,#FE6E21); */
+    background-color: #FE6E21;
+    border-radius: 50%;
+    top:55%;
+    left: 20%;
+    filter: blur(20px);
+    animation-name: gola3;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes gola2{
+    from{
+        transform: translate(15%,-10%) blur(30px) skew(0);
+    }
+    to{
+        transform: translate(-5%,15%) skew(10deg);
+    }
+}
+@keyframes gola3{
+    from{
+        transform: translate(5%,-10%) blur(30px) skew(0);
+    }
+    to{
+        transform: translate(-5%,15%) skew(10deg);
+    }
+}
+
+
+
+#page3{
+    min-height: 50vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }
