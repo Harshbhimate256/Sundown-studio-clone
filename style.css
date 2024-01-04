@@ -287,6 +287,28 @@ nav{
         transform: translate(-5%,15%) skew(10deg);
     }
 }
+#page3 #text{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin-left: -2vw;
+    /* background-color: grey; */
+    
+}
+#text #gola-text{
+    height: 10px;
+    width: 10px;
+    background-color: #FE3C0D;
+    border-radius: 50%;
+    margin-right: 1vw;
+    margin-top: 4px;
+}
+#text h4{
+    font-family: nue;
+    font-weight: 200;
+}
+
+
 
 
 
@@ -294,4 +316,49 @@ nav{
     min-height: 50vh;
     width: 100%;
     background-color: #EFEAE3;
+}
+#page3 .elem{
+    height: 15vh;
+    width: 100%;
+    /* background-color: #FE6E21; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.286);
+}
+.elem h2{
+    font-size: 3vw;
+    z-index: 10;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease .2s;
+}
+.elem:hover .overlay{
+    top: 0;
+}
+#fixed-image{
+    height: 28vw;
+    position: fixed;
+    width: 23vw;
+    /* background-color: red; */
+    z-index: 99;
+    top: 22%;
+    left: 55%;
+    border-radius: 25px;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+#page4{
+    height: 80vh;
+    width: 100%;
+    background-color: #EFEAE3 ;
 }
