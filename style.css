@@ -406,7 +406,14 @@ nav{
     padding-right: 4vw;
 }
 #footer-bottom{
-    height: 10vh;
+    height: 8vh;
     width: 99%;
     border-top: 1px solid rgba(128, 128, 128, 0.624);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-bottom h4{
+    font-size: 19px;
+    font-weight: 200;
 }
