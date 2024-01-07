@@ -416,16 +416,19 @@ nav h3{
     padding: 1vw 2vw;
 }
 #footer h1{
+    z-index: 0;
+    color: #EFEAE3;
     font-size: 23vw;
-    text-align: center;
+    text-align: center; 
 }
 #footer-div{
     height: 25vh;
     width: 100%;
-    background-color: #FE330A;
+    /* background-color: #FE330A; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
     padding: 0 5.5vw;
 }
 #footer-div #left-content h2{
@@ -436,6 +439,121 @@ nav h3{
     font-weight: 200;
     padding-right: 4vw;
 }
+#footer-strip{
+    height: 30vh;
+    width: 100%;
+    filter: blur(50px);
+    background-color:#FE330A ;
+    position: absolute;
+    top: 11%;
+    animation-name: foot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+#footer-gola1{
+    height: 30vw;
+    width: 40vw;
+    top: -4%;
+    filter: blur(50px);
+    left: -10%;
+    background: linear-gradient(#fe470a,#FE330A);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    animation-name: foot1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+#footer-gola2{
+    height: 40vw;
+    width: 30vw;
+    top: -6%;
+    filter: blur(50px);
+    left: 75%;
+    background: linear-gradient(#fe470a,#FE330A);
+    position: absolute;
+    z-index: 1;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 30%;
+    animation-name: foot2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+#footer-gola3{
+    height: 25vw;
+    width: 25vw;
+    top: -2%;
+    filter: blur(50px);
+    left: 35%;
+    background: linear-gradient(#fe470a,#FE330A);
+    /* background-color: red; */
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    animation-name: foot3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes foot1 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-4%,12%);
+    }
+}
+@keyframes foot {
+    from{
+        transform: translate(0,-5%);
+    }
+    to{
+        transform: translate(-5%,2%);
+    }
+}
+@keyframes foot2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-1%,1%);
+    }
+}
+@keyframes foot3 {
+    from{
+        transform: translate(-10%,2%);
+    }
+    to{
+        transform: translate(15%,5%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #footer-bottom{
     height: 8vh;
     width: 99%;
@@ -883,4 +1001,71 @@ nav h3{
         height: 40vw;
         width: 40vw;
     }
+    #footer-strip{
+        height: 30vh;
+        width: 100%;
+        top: 15%;
+        animation-name: foot;
+    }
+    #footer-gola1{
+        height: 30vw;
+        width: 40vw;
+        top: 10%;
+        filter: blur(50px);
+        left: -10%;
+        z-index: 1;
+        animation-name: foot1;
+    }
+    #footer-gola2{
+        height: 40vw;
+        width: 30vw;
+        top: 10%;
+        filter: blur(50px);
+        left: 75%;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 30%;
+        animation-name: foot2;
+
+    }
+    #footer-gola3{
+        height: 25vw;
+        width: 25vw;
+        top: -2%;
+        left: 35%;
+        border-radius: 50%;
+        animation-name: foot3;
+    }
+    @keyframes foot1 {
+        from{
+            transform: translate(5%,-5%);
+        }
+        to{
+            transform: translate(-14%,25%);
+        }
+    }
+    @keyframes foot {
+        from{
+            transform: translate(0,-5%);
+        }
+        to{
+            transform: translate(-5%,2%);
+        }
+    }
+    @keyframes foot2 {
+        from{
+            transform: translate(5%,-5%);
+        }
+        to{
+            transform: translate(-1%,20%);
+        }
+    }
+    @keyframes foot3 {
+        from{
+            transform: translate(-10%,2%);
+        }
+        to{
+            transform: translate(15%,5%);
+        }
+    }
+    
 }
