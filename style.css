@@ -366,6 +366,78 @@ nav h3{
     background-size: cover;
     background-position: center;
 }
+#page3-mid{
+    min-height: 110vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    /* background-color: grey; */
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page3-mid #page3-box{
+    height: 90vh;
+    width: 96%;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+}
+#page3-box #content-left{
+    width: 45%;
+    /* background-color: #FE7525; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content-left #items{
+    width: 50%;
+    text-align: left;
+    padding-left: 2.5vw;
+    padding-top: 5.2vw;
+}
+#items h2{
+    font-size: 4vw;
+    color: #EFEAE3;
+    line-height: 4vw;
+}
+#items #heading2{
+    color: #504A45;
+}
+#items #heading3{
+    color: #504A45;
+}
+#items p{
+    font-weight: 200;
+    font-size: 1vw;
+    color: #EFEAE3;
+    line-height: 1.3vw;
+}
+
+#page3-box #content-right{
+    width: 55%;
+    /* background-color: red; */
+}
+#page3-box #content-right img{
+    object-fit: cover;
+    height: 90vh;
+    width: 100%;
+    border-radius: 20px;
+    scale: 1    ;
+}
+
+
+
+
+
+
+
+
+
+
+
 #page4{
     height: 60vh;
     width: 100%;
